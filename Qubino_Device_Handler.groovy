@@ -17,7 +17,7 @@
  *  Date: 06/10/2020
  */
 metadata {
-	definition (name: "Qubino Meter", namespace: "smartthings", author: "SmartThings", runLocally: true, minHubCoreVersion: '000.017.0012', executeCommandsLocally: false, ocfDeviceType: "x.com.st.d.energymeter") {
+	definition (name: "Qubino Meter", namespace: "smartthings", author: "WarrenK-design ", runLocally: true, minHubCoreVersion: '000.017.0012', executeCommandsLocally: false, ocfDeviceType: "x.com.st.d.energymeter") {
 		capability "Energy Meter"
 		capability "Power Meter"
 		capability "Configuration"
