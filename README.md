@@ -15,3 +15,9 @@ Through the REST API values of Voltage, Power and Energy can be accessed through
 If you wantto poll the meter to see if it is recording measuremnts send a refresh command to the meter through the [Classic SmartThings app](https://play.google.com/store/apps/details?id=com.smartthings.android&hl=en&gl=US), thhe simulator in the [SmartThings IDE](https://graph.api.smartthings.com/) or through the REST API executing a [*refresh*](https://smartthings.developer.samsung.com/docs/api-ref/st-api.html#operation/executeDeviceCommands) command. 
 
 A sample output from the logs after executing a *refresh* command is shown below. 
+
+![image](https://user-images.githubusercontent.com/61060096/95188708-bbc27580-07c4-11eb-8bd6-5910066443ad.png)
+
+A view in the classic SmartThings App is shown below. The *RESET KWH* button can be used to reset the Energy value stored by meter using the app. The button in the middle of the second row executes the *refresh* command. The last button in the second row executes the *configure* command in the device handler. Currently this view is not supported in the new SmartThings application. 
+
+![image](https://user-images.githubusercontent.com/61060096/95189174-68045c00-07c5-11eb-85f8-e6b4b15740fa.png)
