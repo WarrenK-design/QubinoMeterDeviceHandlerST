@@ -104,7 +104,7 @@ def parse(String description) {
     if (cmd) {
 		result = createEvent(zwaveEvent(cmd))
 	}
-	//log.debug "Parse returned ${result?.descriptionText}"
+	log.debug "Parse returned ${result?.descriptionText}"
 	return result
 }
 
@@ -213,7 +213,7 @@ def configure() {
 		], 500)
 	else if (isQubinoSmartMeter())
 		delayBetween([
-				encap(zwave.configurationV1.configurationSet(parameterNumber: 40, size: 1, scaledConfigurationValue: 10)), // Device will report on 10% power change
+				encap(zwave.configurationV1.configurationSet(parameterNumber: 40, size: 1, scaledConfigurationValue: 1)), // Device will report on 10% power change
 				encap(zwave.configurationV1.configurationSet(parameterNumber: 42, size: 2, scaledConfigurationValue: 300)), // report every 5 minutes
 		], 500)
 	else
